@@ -1,0 +1,159 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+#title{
+	background: #069A8E;
+}
+
+.navbar-nav{
+	font-family: 'Lilita One', cursive;
+	text-align: center;
+}
+
+.brand-text{
+	font-family: 'Lilita One', cursive;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.container-fluid{
+	padding: 20px 70px 20px 70px;
+}
+
+.rc-img{
+	width: 300px;
+	border-radius: 40px;
+	margin-top: 50px;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #fff;
+	/*font-weight: bold;*/
+	font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.title-btn{
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.title-icons{
+	color: #069A8E;
+	font-weight: bold;
+}
+
+
+.row{
+	text-align: center;
+	margin: 50px auto 200px;
+}
+
+/*Features section*/
+#features{
+	margin-top: 100px;
+}
+.icons{
+	color: #069A8E;
+	font-size: 60px;
+}
+.icons:hover{
+	color: #A1E3D8;
+}
+
+h3,p{
+	margin-top: 20px;
+	font-family: "Mochiy Pop One",sans-serif;
+	color: grey;
+}
+
+/*Form section*/
+
+#Form-Section{
+	background: #F7FF93;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+form{
+	margin: 30px;
+	text-align: center;
+}
+
+input{
+	margin: 10px;
+	text-align: center;
+	border: none;
+}
+
+label{
+	font-weight: bold;
+	color: black;
+}
+
+#Form-Section h2{
+	font-weight: bold;
+	font-family: "Lilita One",cursive;
+	color: grey;
+}
+
+.submit-btn{
+	background: #069A8E;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 23px;
+	border: 3px solid black;
+}
+
+
+.submit-btn:hover{
+	background: blue;
+}
+
+.btn-danger:hover{
+	background: white;
+	color: red;
+}
+/*pdf-hide-section*/
+
+.report-card-container{
+	text-align: center;
+}
+.generate_pdf_section{
+	background: #E9EFC0;
+	display: table;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  font-family: fantasy;
+}
+th{
+	text-align: center;
+}
+.p-head{
+	/*text-align: center;
+	margin-bottom: 0;*/
+
+	/*font-size: 40px;*/
+	color: #4E944F;
+}
+
+table{
+	margin: 0;
+	width: 100%;
+	/*display: inline-table;*/
+}
+
+/*footer*/
+
+.footer a{
+	margin: 0 10px 0 10px;
+	
+}
+
+.footer{
+	margin-top: 20px;
+}
