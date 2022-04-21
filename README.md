@@ -15,5 +15,6 @@ Demo: https://subhranshuchoudhury.github.io/report-card-generator/
 - CSS
 - JS
 - JQUERY
-# Not Optimized for Mobile viewport. Turn your desktop mode on or use a desktop for best experience.
-# 🍫
+
+# 
+# 🍫✨💖
