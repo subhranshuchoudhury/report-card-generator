@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Form-Section">Get started</a>
+                <a class="nav-link" aria-current="page" href="#std_input_table">Get started</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#features">Features</a>
@@ -38,8 +38,8 @@
         </nav>
         <div class="row">
           <div class="col-lg-6">
-            <h1>Generate report card immidietly.<br>Download as .pdf</h1>
-            <a type="button" href="#Form-Section" class="btn btn-light btn-lg title-btn"><i class="material-icons title-icons">
+            <h1>Generate report card immidietly.<br><br>PDF | PRINT</h1>
+            <a type="button" href="#std_input_table" class="btn btn-light btn-lg title-btn"><i class="material-icons title-icons">
               create
             </i> Create</a>
           </div>
@@ -68,140 +68,323 @@
       </div>
     </section>
     <!-- Form Section -->
-    <section id="Form-Section">
-      <center>
-      <h2>Enter Student Data.</h2>
-      <form class="input-form">
-        <label>Name: </label>
-        <input type="text" name="" class="i-name"><br>
-        <label>Class: </label>
-        <input type="text" name="" class="i-class"><br>
-        <label>Section:</label>
-        <input type="text" name="" class="i-section"><br>
-        <label>Roll No: </label>
-        <input type="text" name="" class="i-roll"><br>
-        <label>Father's Name: </label>
-        <input type="text" name="" class="i-father"><br>
-        <label>Mobile: </label>
-        <input type="number" name="" class="i-mob"><br>
-        <label>Physics Total:</label>
-        <input type="number" name="" class="i-p-total"><br>
-        <label>Physics Secured: </label>
-        <input type="number" class="i-p-sec"><br>
-        <label>Chemistry Total:</label>
-        <input type="number" class="i-c-total"><br>
-        <label>Chemistry Secured:</label>
-        <input type="number" class="i-c-sec"><br>
-        <label>Math Total:</label>
-        <input type="number" class="i-math-total"><br>
-        <label>Math Secured:</label>
-        <input type="number" class="i-math-sec"><br>
-        <label>Result:</label>
-        <input type="text" name="" class="i-res"><br>
-        <input type="submit" name="" class="submit-btn" value="SUBMIT DATA">
-      </form>
-      <input style="display: none;" type="button" class="btn btn-danger" value="Download Pdf" onclick="testPdf();">
-      </center>
-    </section>
-    <!-- Pdf generate section -->
-    <center>
+    <table class="input-form" id="std_input_table" style="width: 100%;">
+      <colgroup>
+      <col span="1" style="width: 20%;">
+      <col span="1" style="width: auto;">
+      </colgroup>
+      <tr>
+        <th colspan="2" style="font-size: 25px;">INPUT DATA HERE</th>
+      </tr>
+      <tr>
+        <td>School</td>
+        <td><input type="text" name="" placeholder="School name" class="i-school"></td>
+      </tr>
+      <tr>
+        <td>Student Name</td>
+        <td><input type="text" name="" placeholder="Full name" class="i-name"></td>
+      </tr>
+      <tr>
+        <td>Roll No.</td>
+        <td><input type="text" name="" placeholder="Roll no" class="i-roll"></td>
+      </tr>
+      <tr>
+        <td>Class</td>
+        <td>
+          <select class="i-class">
+            <option value="I">Class 1</option>
+            <option value="II">Class 2</option>
+            <option value="III">Class 3</option>
+            <option value="IV">Class 4</option>
+            <option value="V">Class 5</option>
+            <option value="VI">Class 6</option>
+            <option value="VII">Class 7</option>
+            <option value="VIII">Class 8</option>
+            <option value="IX">Class 9</option>
+            <option value="X">Class 10</option>
+            <option value="XI">Class 11</option>
+            <option value="XII">Class 12</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <select class="i-gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Section</td>
+        <td><input type="text" name="" placeholder="Section" class="i-sec"></td>
+      </tr>
+      <tr>
+        <td>Father Name</td>
+        <td><input type="text" name="" placeholder="Father's name" class="i-father"></td>
+      </tr>
+      <tr>
+        <td>Mobile No.</td>
+        <td><input type="text" name="" placeholder="Mobile no" class="i-mob"></td>
+      </tr>
+      <tr>
+        <td>Physics Total</td>
+        <td><input type="number" name="" placeholder="Physics total" class="i-p-total"></td>
+      </tr>
+      <tr>
+        <td>Physics Secured</td>
+        <td><input type="number" value="0" name="" class="i-p-sec"></td>
+      </tr>
+      <tr>
+        <td>Chemistry Total</td>
+        <td><input type="number" name="" placeholder="Chemistry total" class="i-c-total"></td>
+      </tr>
+      <tr>
+        <td>Chemistry Secured</td>
+        <td><input type="text" value="0" name="" class="i-c-sec"></td>
+      </tr>
+      <tr>
+        <td>Math Total</td>
+        <td><input type="number" name="" placeholder="Math total" class="i-math-total"></td>
+      </tr>
+      <tr>
+        <td>Math Secured</td>
+        <td><input type="number" value="0" name="" class="i-math-sec"></td>
+      </tr>
+      <tr>
+        <td>Result</td>
+        <td>
+          <select class="i-res">
+            <option value="PASS">PASS</option>
+            <option value="FAIL">FAIL</option>
+            <option value="ABSENT">ABSENT</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th><button style="color: red;width: 70%" onclick="reset_table();">RESET</button></th>
+        <th><input onclick="send_data_for_print()" type="submit" value="SUBMIT DATA" name=""></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Download</th>
+        <td>
+          <button style="margin-right: 30px;padding: 5px;" onclick="GenerateCard()">PDF (COLOR)</button>
+          <button style="margin-top: 10px; margin-right: 30px; padding: 5px;" onclick="GenerateCard_bw()">PDF (B&W)</button>
+        </td>
+      </tr>
+      <tr>
+        <th>Print</th>
+        <td>
+          <button style="padding: 5px;width: 40%;" onclick="print_report_card()">PRINT (COLOUR)</button>
+          <button style="padding: 5px;width: 40%;" onclick="print_report_card_bw()">PRINT (B/W)</button>
+        </td>
+      </tr>
+    </table>
     
-    <section class="generate_pdf_section">
-      <div class="report-card-container">
-        <h1 class="p-head">Report Card</h1>
-        <br>
-        <div class="box">
-          <table>
-            <tr>
-              <th colspan="2">Student Data</th>
-            </tr>
-            <tr>
-              <td>Name: </td>
-              <td id="p-name">XXXXXX-XXXXXX</td>
-              
-            </tr>
-            <tr>
-              <td>RollNo: </td>
-              <td id="p-roll">TH202178</td>
-              
-            </tr>
-            <tr>
-              <td>Class: </td>
-              <td id="p-class">XII</td>
-            </tr>
-            <tr>
-              <td>Section: </td>
-              <td id="p-section">IT-1</td>
-            </tr>
-            <tr>
-              <td>Father's Name: </td>
-              <td id="p-father">Siba Prasad Choudhury</td>
-            </tr>
-            <tr>
-              <td>Mobile: </td>
-              <td id="p-mobile">8249587552</td>
-            </tr>
-          </table>
-          
-          <table>
-            <tr>
-              <th colspan="3">Result Distribution</th>
-            </tr>
-            <tr>
-              <th>Subject</th>
-              <th>Total</th>
-              <th>Secured</th>
-            </tr>
-            <tr>
-              <td>Physics</td>
-              <td id="p-phy-total">100</td>
-              <td id="p-phy-mark">78</td>
-            </tr>
-            <tr>
-              <td>Chemistry</td>
-              <td id="p-chem-total">100</td>
-              <td id="p-chem-mark">84</td>
-            </tr>
-            <tr>
-              <td>Mathematics</td>
-              <td id="p-math-total">100</td>
-              <td id="p-math-mark">72</td>
-            </tr>
-            <tr>
-              <th colspan="2">Total</th>
-              <th id="p-total-mark">234</th>
-            </tr>
-            <tr>
-              <th colspan="2">Result</th>
-              <th id="p-result">PASS</th>
-            </tr>
-          </table>
-          
-        </div>
-        <p>Contact me at subhransuchoudhury00@gmail.com for more styling the UI and personalization.<br>***DEMO PURPOSE ONLY***</p>
-      </div>
-      
-      
-    </section>
-    </center>
-    <section>
+    <!-- Pdf generate section -->
+    <hr>
+    <h3 style="text-align: center;">TYPE: COLOUR</h3 style="text-align: center;">
+    <hr>
+    <div id="report-card-HTML">
+      <p class="school-title">TETRAHEDRON JUNIOR SCIENCE COLLEGE</p>
       <center>
-      <div class="footer" id="contacts">
-        <a href="mailto:subhransuchoudhury00@gmail.com"><i class="material-icons">
-          email
-        </i></a>
-        <a href="https://github.com/subhranshuchoudhury"><i class="material-icons">
-          code
-        </i></a>
-        <a href="https://peerlist.io/subhranshu"><i class="material-icons">
-          account_circle
-        </i></a>
-        <br>
-        <p>@subhranshu choudhury, 918249587552</p>
-      </div>
-    </section>
-    </center>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+      <table id="report-table">
+        <tr>
+          <th colspan="2">STUDENT DETAILS</th>
+        </tr>
+        <tr>
+          <th colspan="2"></th>
+        </tr>
+        <tr>
+          <th>NAME :</th>
+          <th id="p-name">Subhranshu Choudhury</th>
+        </tr>
+        
+        <tr>
+          <td>Class :</td>
+          <td id="p-class">12</td>
+        </tr>
+        <tr>
+          <td>Roll No :</td>
+          <td id="p-roll">036AC2021</td>
+        </tr>
+        <tr>
+          <td>Section :</td>
+          <td id="p-section">IT-1</td>
+        </tr>
+        <tr>
+          <td>Gender: </td>
+          <td id="p-gender">Male</td>
+        </tr>
+        <tr>
+          <td>Father :</td>
+          <td id="p-father">Harapriya Choudhury</td>
+        </tr>
+        <tr>
+          <td>Mobile :</td>
+          <td id="p-mobile">8249587552</td>
+        </tr>
+        
+      </table>
+      <table id="report-table">
+        <tr>
+          <th colspan="3">MARK DISTRIBUTION</th>
+        </tr>
+        <tr>
+          <th colspan="3"></th>
+        </tr>
+        <tr>
+          <th>SUBJECTS</th>
+          <th>TOTAL</th>
+          <th>SECURED</th>
+        </tr>
+        <tr>
+          <td>PHYSICS</td>
+          <td id="p-phy-total">100</td>
+          <td id="p-phy-mark">100</td>
+        </tr>
+        <tr>
+          <td>CHEMISTRY</td>
+          <td id="p-chem-total">100</td>
+          <td id="p-chem-mark">100</td>
+        </tr>
+        <tr>
+          <td>MATH</td>
+          <td id="p-math-total">100</td>
+          <td id="p-math-mark">100</td>
+        </tr>
+        <tr>
+          <th colspan="2">RESULT</th>
+          <td id="p-result">100</td>
+        </tr>
+        <tr>
+          <th colspan="2">TOTAL MARKS</th>
+          <td id="p-total-mark">300</td>
+        </tr>
+        <tr>
+          <th colspan="2">PERCENTAGE %</th>
+          <td id="p-percentage">100%</td>
+        </tr>
+      </table>
+      <h6 style="color: grey;">@made by <a href="https://peerlist.io/subhranshu">SSC</a></h6>
+      </center>
+      
+    </div>
+    <hr>
+    <h3 style="text-align: center;">TYPE: B/W</h3>
+    <hr>
+    <!-- Pdf Black and White -->
+    <div class="table_bw-div">
+      
+      <center>
+      <b style="font-size: 23px;" class="school-title_bw">TETRAHEDRON JUNIOR SCIENCE COLLEGE</b><br><p>REPORT CARD</p>
+      <table class="table_bw">
+        <tr>
+          <th colspan="2">STUDENT DETAILS</th>
+        </tr>
+        <tr>
+          <th colspan="2"></th>
+        </tr>
+        <tr>
+          <th>NAME :</th>
+          <th class="p-name">Subhranshu Choudhury</th>
+        </tr>
+        
+        <tr>
+          <td>Class :</td>
+          <td class="p-class">12</td>
+        </tr>
+        <tr>
+          <td>Roll No :</td>
+          <td class="p-roll">036AC2021</td>
+        </tr>
+        <tr>
+          <td>Section :</td>
+          <td class="p-section">IT-1</td>
+        </tr>
+        <tr>
+          <td>Gender: </td>
+          <td class="p-gender">Male</td>
+        </tr>
+        <tr>
+          <td>Father :</td>
+          <td class="p-father">Harapriya Choudhury</td>
+        </tr>
+        <tr>
+          <td>Mobile :</td>
+          <td class="p-mobile">8249587552</td>
+        </tr>
+        
+      </table>
+      <table class="table_bw">
+        <tr>
+          <th colspan="3">MARK DISTRIBUTION</th>
+        </tr>
+        <tr>
+          <th colspan="3"></th>
+        </tr>
+        <tr>
+          <th>SUBJECTS</th>
+          <th>TOTAL</th>
+          <th>SECURED</th>
+        </tr>
+        <tr>
+          <td>PHYSICS</td>
+          <td class="p-phy-total">100</td>
+          <td class="p-phy-mark">85</td>
+        </tr>
+        <tr>
+          <td>CHEMISTRY</td>
+          <td class="p-chem-total">100</td>
+          <td class="p-chem-mark">90</td>
+        </tr>
+        <tr>
+          <td>MATH</td>
+          <td class="p-math-total">100</td>
+          <td class="p-math-mark">78</td>
+        </tr>
+        <tr>
+          <th colspan="2">RESULT</th>
+          <td class="p-result">100</td>
+        </tr>
+        <tr>
+          <th colspan="2">TOTAL MARKS</th>
+          <td class="p-total-mark">300</td>
+        </tr>
+        <tr>
+          <th colspan="2">PERCENTAGE %</th>
+          <td class="p-percentage">100%</td>
+        </tr>
+      </table>
+      <h6 style="color: grey;">@made by <a href="https://peerlist.io/subhranshu">SSC</a></h6>
+      </center>
+      
+    </div>
+    <hr><hr>
+    
+    <center>
+    <div class="footer" id="contacts">
+      <a href="mailto:subhransuchoudhury00@gmail.com"><i class="material-icons">
+        email
+      </i></a>
+      <a href="https://github.com/subhranshuchoudhury"><i class="material-icons">
+        code
+      </i></a>
+      <a href="https://peerlist.io/subhranshu"><i class="material-icons">
+        account_circle
+      </i></a>
+      <br>
+      <p>@subhranshu choudhury, 918249587552</p>
+    </div>
+  </section>
+  </center>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>
